@@ -1,6 +1,6 @@
 #include "monty.h"
 
-global_variables globv;
+
 void set_to_global(void);
 
 /**
@@ -12,6 +12,8 @@ void set_to_global(void);
 
 int main(int argc, char *argv[])
 {
+
+global_variables globv;
 	char *buffer = NULL, *file = argv[1], *tokenize = NULL, *DELIMITER = " \n\t";
 	size_t buff_size = 0;
 	ssize_t size;
@@ -59,6 +61,9 @@ int main(int argc, char *argv[])
 
 void set_to_global(void)
 {
+
+global_variables globv;
+
 	globv.head = NULL;
 	globv.line_number = 0;
 	globv.buffer = NULL;
