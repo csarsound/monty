@@ -6,7 +6,7 @@
 * @line_number: number of the line of the opcode
 */
 
-void push_func(stack_t **stack, unsigned int line_number)
+void push_func(stackk_t **stackk, unsigned int line_number)
 {
 	unsigned int number;
 
@@ -20,5 +20,5 @@ void push_func(stack_t **stack, unsigned int line_number)
 	}
 
 	number = atoi(globv.n);
-	add_element(stack, number);
+	add_element(stackk, number);
 }
